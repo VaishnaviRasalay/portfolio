@@ -40,7 +40,6 @@ const Skills = () => {
         <ul>
             <li>Responsive Web Design</li>
             <li>Routing & State Management in React</li>
-            <li>Cloud Job Scheduling Concepts</li>
             <li>Image Annotation for AI Models</li>
             <li>Communication & Team Collaboration</li>
         </ul>
