@@ -1,15 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   // Function to open resume in a new tab
   const openResume = () => {
-    window.open(process.env.PUBLIC_URL + "/assets/VaishnaviResume.pdf", "_blank", "noopener,noreferrer")
-  }
+    // Opens the resume in a new tab
+    window.open(`${process.env.PUBLIC_URL}/assets/VaishnaviResume.pdf`, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <div className='home-container'>
-      <img src={process.env.PUBLIC_URL + "/assets/female.jpg"} alt="Vaishnavi Rasalay" />
+      <img 
+        src={`${process.env.PUBLIC_URL}/assets/female.jpg`} 
+        alt="Vaishnavi Rasalay" 
+      />
 
       <h2><i>Vaishnavi Rasalay</i></h2>
       <p className='designation'>- Frontend Developer</p>
@@ -28,7 +32,7 @@ const Home = () => {
         <Link to="/Contact" className="btn">Contact Me</Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
