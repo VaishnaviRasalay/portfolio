@@ -1,0 +1,242 @@
+*{
+  margin: 0px;
+  padding: 0px;
+   background-color: black;
+  color: white;
+}
+/* Reset margin & prevent page scroll */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;   /* No scrolling for the whole page */
+    
+}
+
+/* Every page section takes full screen height */
+.page {
+  height: 100vh;       /* Full viewport height */
+  display: flex;       /* Optional: for centering content */
+  flex-direction: column;
+  box-sizing: border-box;
+
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+  
+}
+nav a{
+  color:white;
+  text-decoration: none;
+}
+nav a:hover{
+  color:yellow
+}
+
+/* Home */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertical center */
+  align-items: center;      /* horizontal center */
+  min-height: 100vh;        /* take full screen */
+  text-align: center;
+
+}
+
+.image{
+  padding:40px 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.designation {
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+button{
+  margin:40px;
+  cursor:pointer
+}
+
+
+.btn {
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e68900;
+}
+
+
+/* About */
+.about-container{
+  margin:0px 80px;
+  line-height: 1.6;
+  max-width: 900px;
+
+}
+.abt-h3{
+  padding-top: 20px;
+  text-align: center;
+  color: #e68900;
+}
+.about-container ul li,
+.about-container p{
+  padding: 10px 50px;
+  list-style-position: inside;
+}
+.abt-btn{
+  background-color: #ff9800;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+    margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+ transition: 0.3s ease;
+}
+.abt-btn:hover{
+  background-color:#f9ce8e;
+}
+.btn-container{
+  text-align: center;
+}
+
+/* skills */
+.skill-container{
+ max-width: 800px;   /* keeps content neat */
+  margin: 0 auto;     /* centers it horizontally */
+  padding: 20px;
+  
+}
+
+.skill-h3{
+  color: #e68900;
+text-align: left;  
+  padding: 20px 20px;
+}
+.skill-container ul {
+  padding-left: 20px; /* indentation for bullets */
+  margin-bottom: 20px;
+}
+.skill-container ul li {
+  list-style-type:circle;
+}
+
+
+/* projects */
+.project-container{
+  text-align: center;
+
+  padding: 50px 20px;     /* reduce side padding so content doesn’t look too narrow */
+  max-width: 900px;       /* keeps it from stretching too wide on large screens */
+  margin: 0 auto;         /* centers container horizontally */
+}
+
+.projects{
+  color:#e68900;
+   margin-bottom: 20px;
+
+}
+.project-h3{
+  color: #f9ce8e;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  
+}
+.project-container ul {
+  list-style-position: inside;  /* Moves bullet closer to text */
+  padding-left: 0;             /* Removes extra left padding */
+  display: inline-block;       /* Keeps list aligned with center text */
+  text-align: left;            /* Aligns text properly with bullets */
+}
+
+/* contact */
+.contact{
+  text-align: center;
+  color:#e68900 ;
+  margin: 20px 20px;
+}
+.contact-des{
+  padding-left: 50px;
+}
+.details{
+    padding-left: 50px;
+    padding-top: 10px;;
+    gap:20px;
+    display: flex;
+  flex-direction: column;
+   align-items: flex-start
+}
+.details p a{
+  text-decoration: none;
+}
+.details p strong{
+  color: #f9ce8e;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container-form {
+  background-color: #f5f5f5; /* ✅ container background */
+ 
+  border-radius: 10px;
+  text-align: center;
+    margin: 30px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #fff; /* ❌ not inherited from parent */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+ width: 80%;
+  color: black;
+   font-size: 16px;
+   transition: all 0.3s ease;
+   
+  
+  
+}
+form{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
+}
+.contact-btn{
+  background-color: #e68900;
+  display: inline;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.contact-btn:hover {
+  background-color: #f9ce8e;
+  transform: scale(1.05);
+}
+.container-form {
+  background-color: #f2e2e2; /* Light background for full form box */
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px auto;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px; 
+}
