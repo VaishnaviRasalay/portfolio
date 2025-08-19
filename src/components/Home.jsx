@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   // Function to open resume in a new tab
-  const openResume = () => {
-    // Opens the resume in a new tab
-    window.open(`${process.env.PUBLIC_URL}/assets/VaishnaviResume.pdf`, "_blank", "noopener,noreferrer");
-  };
+const openResume = () => {
+  window.open(process.env.PUBLIC_URL + "/assets/VaishnaviResume.pdf", "_blank", "noopener,noreferrer");
+}
+
 
   return (
     <div className='home-container'>
