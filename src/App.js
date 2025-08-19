@@ -1,5 +1,6 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
@@ -15,16 +16,16 @@ const App = () => {
     <div>
        
       <Router>
-        <Navbar/>
-        <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/About' element={<About/>}/>
-            <Route path="/Projects" element={<Projects/>}/>
-            <Route path="/Skills" element={<Skills/>}/>
-            <Route path="/Contact" element={<Contact/>}/>
+  <Navbar />
+  <Routes>
+    <Route path='/' element={<Home />} />
+    <Route path='/About' element={<About />} />
+    <Route path='/Projects' element={<Projects />} />
+    <Route path='/Skills' element={<Skills />} />
+    <Route path='/Contact' element={<Contact />} />
+  </Routes>
+</Router>
 
-        </Routes>
-      </Router>
     </div>
   )
 }
